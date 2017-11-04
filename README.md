@@ -40,7 +40,7 @@ Maximum and Average queuing Delay with Proportional Integral controller Enhanced
 
 3. Install Netserver in server machine
 
-4. Install Flent in client machine
+4. Install Flent from github or ppa repository in client machine
 
 5. Install the modified kernel with MADPIE algorithm in router machine
 
