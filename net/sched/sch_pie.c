@@ -400,7 +400,10 @@ static void calculate_probability(struct Qdisc *sch)
 		delta += MAX_PROB / (100 / 2);
 
 	q->vars.prob += delta;
-
+    
+    /* Update max_prob
+     * if madpie is set and current delay is greater than hard_delay (default value of hard_delay is 30ms)
+     */
 	if (q->params.madpie && (q->vars.qdelay>q->params.hard_delay))
 		q->params.max_prob = true;
 
